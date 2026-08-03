@@ -1,7 +1,12 @@
 # cpp
 
+### Компиляция
 ```
-g++                  # Компилятор g++ -c square.cpp
+g++                  # Компилятор 
+g++ -c square.cpp.   # Компиляция cpp файла
+square.o             # Вывод
+```
+
 
 mingw32-make         # Компиляция в папку Release
 mingw32-make install # Копирует DLL в папку с компилятором
