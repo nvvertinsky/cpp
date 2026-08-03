@@ -8,6 +8,7 @@ square.o                          # Результат. Содержит маш�
 objdump -d square.o               # Утилита objdump переводит машинный код в ассемблер
 ```
 
+### Прочее
 ```
 mingw32-make         # Компиляция в папку Release
 mingw32-make install # Копирует DLL в папку с компилятором
