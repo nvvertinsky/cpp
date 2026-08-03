@@ -2,9 +2,9 @@
 
 ### Компиляция
 ```
-g++                  # Компилятор 
-g++ -c square.cpp.   # Компиляция cpp файла
-square.o             # Вывод
+g++                               # Компилятор 
+g++ -c square.cpp -o my_program   # Компиляция cpp файла
+square.o                          # Вывод
 ```
 
 
