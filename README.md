@@ -5,7 +5,7 @@
 g++                               # Компилятор 
 g++ -c square.cpp -o my_program   # Компиляция cpp файла
 square.o                          # Результат. Содержит машинный код
-objdump -d square.o.              # Утилита objdump переводит машинный код в ассемблер
+objdump -d square.o               # Утилита objdump переводит машинный код в ассемблер
 ```
 
 
