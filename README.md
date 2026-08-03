@@ -22,7 +22,7 @@ ar rc libsquare.a square.o.             # Создать архив libsquare.a 
 g++ -o my_program main.o -L. -lsquare.  # -L путь где нужно искать библиотеки, -l имя библиотеки
 ```
 
-### Утилита make
+### Утилита make для автоматизации сборки
 ```
 make цель      # 
 ```
