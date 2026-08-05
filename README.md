@@ -48,7 +48,8 @@ foo(x);
 
 ### Передача аргументов по ссылке
 ```
-void foo(int& x); 
+void foo(int& x);
+void foo(const int& x);
 
 int x = 5; 
 foo(x);
