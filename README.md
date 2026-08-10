@@ -12,7 +12,7 @@ ar rc libsquare.a square.o            # Создать библиотеку libs
 g++ -o my_program main.o -L. -lsquare # Подключение библиотеки
 qmake, cmake                          # Системы автоматизации сборки, создают makefile
 make <цель>                           # Читает готовый Makefile и напрямую вызывает компилятор g++
-nmake                                 # Компиляция через MSVC
+nmake                                 # Читает готовый Makefile и напрямую вызывает компилятор MSVC
 valgrind ./my_program                 # valgrind используется, в частности, для поиска утечек памяти и других проблем с памятью.
 ```
 
