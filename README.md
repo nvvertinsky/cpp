@@ -11,7 +11,7 @@ MinGW                                 # Набор инструментов дл
 ar rc libsquare.a square.o            # Создать библиотеку libsquare.a из square.o
 g++ -o my_program main.o -L. -lsquare # Подключение библиотеки
 qmake, cmake                          # Системы автоматизации сборки, создают makefile
-make <цель>                           # Читает готовый Makefile и вызывает компилятор g++
+make <цель>                           # Читает готовый Makefile и вызывает компилятор g++ или clang
 nmake                                 # Читает готовый Makefile и вызывает компилятор MSVC
 valgrind ./my_program                 # valgrind используется, в частности, для поиска утечек памяти и других проблем с памятью.
 ```
