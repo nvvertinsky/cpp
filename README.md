@@ -10,7 +10,8 @@ g++ -o my_program main.o square.o.    # Компоновка (линковка) 
 MinGW                                 # Набор инструментов для разработки C++ под Windows, содержит g++, cdb.exe, mingw32-make
 ar rc libsquare.a square.o            # Создать библиотеку libsquare.a из square.o
 g++ -o my_program main.o -L. -lsquare # Подключение библиотеки
-make <цель>                           # Утилита для автоматизации сборки проекта. В проекте должен быть файл Makefile. Для QT - это qmake
+qmake, cmake                          # Системы автоматизации сборки
+make <цель>                           # Утилита для автоматизации сборки проекта. В проекте должен быть файл Makefile
 nmake                                 # Компиляция через MSVC
 valgrind ./my_program                 # valgrind используется, в частности, для поиска утечек памяти и других проблем с памятью.
 ```
