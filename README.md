@@ -36,6 +36,9 @@ cd src
 qmake
 nmake
 nmake install
+
+qmake CONFIG+=debug qscintilla.pro
+nmake -f Makefile.Debug
 ```
 
 ## 4 Компоненты для QT
