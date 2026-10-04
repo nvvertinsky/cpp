@@ -29,11 +29,23 @@ void prc(fooptr foo);                   # Функция, принимающая
 ```
 
 
-## Как собрать qscintilla на Windows c помощью MSVC
+## 3 Как собрать qscintilla на Windows c помощью MSVC
 ```
 Открываем Developer Command Prompt
 cd src
 qmake
 nmake
 nmake install
+```
+
+## 4 Компоненты для QT
+```
+qt creator
+CDB debugger
+Qt 6.10.2
+  - MSVC 2022 64-bit
+  - Additional Libraries
+  - Qt Debug Information Files
+CMake 3.30.5
+Ninja 1.12.1
 ```
