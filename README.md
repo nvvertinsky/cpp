@@ -27,3 +27,13 @@ using fooptr = void(*)(int);            # Указатель на функцию
 void prc(fooptr foo);                   # Функция, принимающая callback
 [список захвата](список параметров) {}  # Лямбда-функция, [=] - захват по значению, [&] - захват по ссылке
 ```
+
+
+## Как собрать qscintilla на Windows
+```
+Открываем Developer Command Prompt
+cd src
+qmake
+nmake
+nmake install
+```
