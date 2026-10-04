@@ -29,7 +29,7 @@ void prc(fooptr foo);                   # Функция, принимающая
 ```
 
 
-## Как собрать qscintilla на Windows
+## Как собрать qscintilla на Windows c помощью MSVC
 ```
 Открываем Developer Command Prompt
 cd src
