@@ -46,9 +46,8 @@ nmake -f Makefile.Debug
 ```
 qt creator
 CDB debugger
-Qt 6.10.2
+Qt 6.12.0
   - MSVC 2022 64-bit
-  - Additional Libraries
   - Qt Debug Information Files
 CMake 3.30.5
 Ninja 1.12.1
