@@ -45,7 +45,7 @@ nmake -f Makefile.Debug
 ## 4. Компоненты для QT
 ```
 qt creator
-CDB debugger
+CDB debugger (только для Windows)
 Qt 6.12.0
   - MSVC 2022 64-bit or MacOS
 CMake
