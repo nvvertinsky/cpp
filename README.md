@@ -49,6 +49,6 @@ CDB debugger
 Qt 6.12.0
   - MSVC 2022 64-bit
   - Qt Debug Information Files
-CMake 3.30.5
-Ninja 1.12.1
+CMake
+Ninja
 ```
