@@ -1,6 +1,6 @@
 # cpp
 
-## 1 
+## 1. Основное
 ```
 g++                                   # Компилятор кросплатформенный
 clang                                 # Компилятор MacOS
@@ -19,7 +19,7 @@ valgrind ./my_program                 # valgrind используется, в ч
 
 ---
 
-## 2
+## 2. Методы
 ```
 void foo(int x);                        # При передаче по значению аргумент копируется
 void foo(const int& x);                 # Передача по ссылке
@@ -30,7 +30,7 @@ void prc(fooptr foo);                   # Функция, принимающая
 ```
 
 
-## 3 Как собрать qscintilla на Windows c помощью MSVC
+## 3. Как собрать qscintilla на Windows c помощью MSVC
 ```
 Открываем Developer Command Prompt
 cd src
@@ -42,7 +42,7 @@ qmake CONFIG+=debug qscintilla.pro
 nmake -f Makefile.Debug
 ```
 
-## 4 Компоненты для QT
+## 4. Компоненты для QT
 ```
 qt creator
 CDB debugger
