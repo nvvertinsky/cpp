@@ -55,4 +55,6 @@ Ninja
  ## 5. Публикация приложения QT
 ```
 macdeployqt MyApp.app -dmg    # Для MacOS выполнить из папки build
+windeployqt6 MyApp.app
+
 ```
