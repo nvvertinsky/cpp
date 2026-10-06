@@ -51,3 +51,8 @@ Qt 6.12.0
 CMake
 Ninja
 ```
+
+ ## 5. Публикация приложения QT
+```
+macdeployqt MyApp.app -dmg    # Для MacOS выполнить из папки build
+```
