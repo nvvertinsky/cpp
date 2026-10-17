@@ -2,9 +2,9 @@
 
 ## 1. Компиляторы
 ```
-g++           # Компилятор кросплатформенный
-clang         # Компилятор MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-MSVC          # Компилятор Windows
+g++           # Кросплатформенный
+clang         # MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+MSVC          # Windows
 ```
 
 ## 2. Автоматизация сборки
