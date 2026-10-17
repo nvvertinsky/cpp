@@ -2,18 +2,18 @@
 
 ## 1. Компиляторы
 ```
-g++                                   # Компилятор кросплатформенный
-clang                                 # Компилятор MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-MSVC                                  # Компилятор Windows
+g++           # Компилятор кросплатформенный
+clang         # Компилятор MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+MSVC          # Компилятор Windows
 ```
 
 ## 2. Автоматизация сборки
 ```
-qmake                                 # Создают makefile
-cmake                                 # Создают makefile. Путь: /opt/homebrew/bin/cmake
-cd build                              # Переход в папку сборки
-cmake ..                              # Читает CMakeLists.txt и подготавливает всё необходимое для последующей компиляции программы (Makefile итд)
-make или nmake                        # Читает Makefile и вызывает компилятор
+qmake                   # Создают makefile
+cmake                   # Создают makefile. Путь: /opt/homebrew/bin/cmake
+cd build                # Переход в папку сборки
+cmake ..                # Читает CMakeLists.txt и подготавливает всё необходимое для последующей компиляции программы (Makefile итд)
+make или nmake          # Читает Makefile и вызывает компилятор
 ```
 
 ## 3. Компиляция
