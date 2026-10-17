@@ -3,7 +3,7 @@
 ## 1. Компиляторы
 ```
 g++                                   # Компилятор кросплатформенный
-clang                                 # Компилятор MacOS
+clang                                 # Компилятор MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 MSVC                                  # Компилятор Windows
 ```
 
