@@ -49,7 +49,7 @@ void prc(fooptr foo);                   # Функция, принимающая
 ```
 
 
-## 7. Как собрать qscintilla на Windows c помощью MSVC
+## 7. Сборка qscintilla на Windows c помощью MSVC
 ```
 Открываем Developer Command Prompt
 cd src
