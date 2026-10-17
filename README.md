@@ -56,7 +56,6 @@ qt creator
 CDB debugger (только для Windows)
 Qt 6.12.0
   - MSVC 2022 64-bit or MacOS
-Ninja
 ```
 
 ## 6. Скопировать библиотеки QT в папку
