@@ -11,8 +11,9 @@ MSVC                                  # Компилятор Windows
 ```
 qmake                                 # Создают makefile
 cmake                                 # Создают makefile. Путь: /opt/homebrew/bin/cmake
-make <цель>                           # Читает готовый Makefile и вызывает компилятор g++ или clang
-nmake                                 # Читает готовый Makefile и вызывает компилятор MSVC
+cd build                              # Переход в папку сборки
+cmake ..                              # Читает CMakeLists.txt и подготавливает всё необходимое для последующей компиляции программы (Makefile итд)
+make или nmake                        # Читает Makefile и вызывает компилятор
 ```
 
 ## 3. Компиляция
