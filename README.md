@@ -11,7 +11,6 @@ MSVC           # Windows
 ```
 qmake          # Создают makefile
 cmake          # Создают makefile. Путь: /opt/homebrew/bin/cmake
-
 ```
 
 ## 3. Сборка на MacOS
