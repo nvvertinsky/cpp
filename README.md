@@ -75,3 +75,17 @@ macdeployqt MyApp.app -dmg  # Для MacOS выполнить из папки bu
 windeployqt6 MyApp.app.     # Для Windows выполнить из папки build, будет папка со всеми зависимостями и exe. Папку можно перемещать на другие компы
 Остальные библиотеки нужно самостоятельно скопировать в папку или пакет .app/frameworks
 ```
+
+## 10. Установка PostgreSQL
+```
+brew update
+brew install postgresql@18
+echo 'export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+brew services start postgresql@18
+brew services list
+psql postgres
+CREATE DATABASE my_test_db;
+\c my_test_db;
+brew install libpq
+```
