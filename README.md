@@ -79,7 +79,7 @@ windeployqt6 MyApp.app.     # Для Windows выполнить из папки 
 ## 10. Установка PostgreSQL
 ```
 brew update
-brew install postgresql@18
+brew install postgresql
 echo 'export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 brew services start postgresql@18
