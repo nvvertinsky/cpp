@@ -87,5 +87,15 @@ brew services list
 psql postgres
 CREATE DATABASE my_test_db;
 \c my_test_db;
-brew install libpq
+```
+
+## 11. Установка Drogon
+```
+git clone https://github.com/drogonframework/drogon
+cd drogon
+git submodule update --init
+mkdir build
+cd build
+cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE  # Потому что Drogon не поддерживает пока что openssl4 
+make && make install
 ```
