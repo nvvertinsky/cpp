@@ -96,6 +96,6 @@ cd drogon
 git submodule update --init
 mkdir build
 cd build
-cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE  # Потому что Drogon не поддерживает пока что openssl4 
+cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE -DBUILD_POSTGRESQL=ON # Потому что Drogon не поддерживает пока что openssl4 
 make && make install
 ```
