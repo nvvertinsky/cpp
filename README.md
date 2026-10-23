@@ -7,27 +7,34 @@ clang          # MacOS. Путь: /Applications/Xcode.app/Contents/Developer/Too
 MSVC           # Windows
 ```
 
-## 2. Автоматизация сборки
+## 2. Отладчики
+```
+CDB debugger   # Windows
+LLDB           # MacOS (Clang)
+
+```
+
+## 3. Автоматизация сборки
 ```
 qmake          # Создают makefile
 cmake          # Создают makefile. Путь: /opt/homebrew/bin/cmake
 ```
 
-## 3. Сборка на MacOS
+## 4. Сборка на MacOS
 ```
 cd build       # Переход в папку сборки
 cmake ..       # Читает CMakeLists.txt и подготавливает всё необходимое для последующей компиляции программы (Makefile итд)
 make           # Читает Makefile и вызывает компилятор
 ```
 
-## 4. Сборка на Windows (в x64 Native Tools Command Prompt for VS 2022)
+## 5. Сборка на Windows (в x64 Native Tools Command Prompt for VS 2022)
 ```
 cd build                            # Переход в папку сборки
 cmake -G "NMake Makefiles" ..       # Читает CMakeLists.txt и подготавливает всё необходимое для последующей компиляции программы (Makefile итд)
 nmake                               # Читает Makefile и вызывает компилятор
 ```
 
-## 5. Компиляция
+## 6. Компиляция
 ```
 g++ -c square.cpp                     # Компиляция .cpp-файла в объектный файл square.o, содержащий машинный код
 g++ -O2 -c square.cpp                 # Компиляция с оптимизацией второго уровня, по-умолчанию 0
@@ -38,7 +45,7 @@ g++ -o my_program main.o -L. -lsquare # Подключение библиоте�
 valgrind ./my_program                 # valgrind используется, в частности, для поиска утечек памяти и других проблем с памятью.
 ```
 
-## 6. Методы
+## 7. Методы
 ```
 void foo(int x);                        # При передаче по значению аргумент копируется
 void foo(const int& x);                 # Передача по ссылке
@@ -49,7 +56,7 @@ void prc(fooptr foo);                   # Функция, принимающая
 ```
 
 
-## 7. Сборка qscintilla (MSVC)
+## 8. Сборка qscintilla (MSVC)
 ```
 Открываем Developer Command Prompt
 cd src
@@ -61,7 +68,7 @@ qmake CONFIG+=debug qscintilla.pro
 nmake -f Makefile.Debug
 ```
 
-## 8. Компоненты для QT
+## 9. Компоненты для QT
 ```
 qt creator
 CDB debugger (только для Windows)
@@ -69,14 +76,14 @@ Qt 6.12.0
   - MSVC 2022 64-bit or MacOS
 ```
 
-## 9. Скопировать библиотеки QT в папку
+## 10. Скопировать библиотеки QT в папку
 ```
 macdeployqt MyApp.app -dmg  # Для MacOS выполнить из папки build, создаст dmg
 windeployqt6 MyApp.app.     # Для Windows выполнить из папки build, будет папка со всеми зависимостями и exe. Папку можно перемещать на другие компы
 Остальные библиотеки нужно самостоятельно скопировать в папку или пакет .app/frameworks
 ```
 
-## 10. Установка PostgreSQL
+## 11. Установка PostgreSQL
 ```
 brew update
 brew install postgresql
@@ -87,7 +94,7 @@ CREATE DATABASE vertinsky;
 \c vertinsky;
 ```
 
-## 11. Установка Drogon
+## 12. Установка Drogon
 ```
 CMakeLists.txt                                      # Добавить set(PostgreSQL_ADDITIONAL_VERSIONS "18") перед find_package(PostgreSQL), потому в FindPostgreSQL.cmake отсутствует 18 версия
 git clone https://github.com/drogonframework/drogon #
