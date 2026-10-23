@@ -91,6 +91,7 @@ CREATE DATABASE my_test_db;
 
 ## 11. Установка Drogon
 ```
+CMakeLists.txt                                      # Добавить set(PostgreSQL_ADDITIONAL_VERSIONS "18") перед find_package(PostgreSQL), потому в FindPostgreSQL.cmake отсутствует 18 версия
 git clone https://github.com/drogonframework/drogon
 cd drogon
 git submodule update --init
