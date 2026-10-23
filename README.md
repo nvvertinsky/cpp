@@ -11,7 +11,7 @@ MSVC           # Windows
 ```
 CDB debugger   # Windows
 LLDB           # MacOS (Clang)
-
+WinDbg         # 
 ```
 
 ## 3. Автоматизация сборки
