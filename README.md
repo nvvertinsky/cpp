@@ -80,13 +80,11 @@ windeployqt6 MyApp.app.     # Для Windows выполнить из папки 
 ```
 brew update
 brew install postgresql
-echo 'export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-brew services start postgresql@18
+brew services start postgresql
 brew services list
 psql postgres
-CREATE DATABASE my_test_db;
-\c my_test_db;
+CREATE DATABASE vertinsky;
+\c vertinsky;
 ```
 
 ## 11. Установка Drogon
