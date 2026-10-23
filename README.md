@@ -96,6 +96,6 @@ cd drogon
 git submodule update --init
 mkdir build
 cd build
-cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE -DPostgreSQL_PG_CONFIG=/opt/homebrew/opt/postgresql/bin/pg_config  # Не поддерживает пока что openssl4 
+cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE # Не поддерживает пока что openssl4 
 make && make install
 ```
