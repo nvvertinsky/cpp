@@ -83,7 +83,7 @@ windeployqt6 MyApp.app.     # Для Windows выполнить из папки 
 Остальные библиотеки нужно самостоятельно скопировать в папку или пакет .app/frameworks
 ```
 
-## 11. Установка PostgreSQL
+## 11. Установка PostgreSQL на MacOS
 ```
 brew update
 brew install postgresql
@@ -94,7 +94,14 @@ CREATE DATABASE vertinsky;
 \c vertinsky;
 ```
 
-## 12. Установка Drogon
+## 12. Установка PostgreSQL на Ununtu
+```
+apt install postgresql
+su - postgres
+psql
+```
+
+## 13. Установка Drogon
 ```
 CMakeLists.txt                                      # Добавить set(PostgreSQL_ADDITIONAL_VERSIONS "18") перед find_package(PostgreSQL), потому в FindPostgreSQL.cmake отсутствует 18 версия
 git clone https://github.com/drogonframework/drogon #
