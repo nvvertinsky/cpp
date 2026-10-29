@@ -107,6 +107,7 @@ CMakeLists.txt                                      # Добавить set(Postg
 git clone https://github.com/drogonframework/drogon #
 cd drogon                                           #
 git submodule update --init                         #
+set(PostgreSQL_ADDITIONAL_VERSIONS "18")            # Добавить в cmake_modules в Findpg.cmake
 mkdir build                                         #
 cd build                                            #
 cmake .. -DCMAKE_DISABLE_FIND_PACKAGE_OpenSSL=TRUE  # Не поддерживает пока что openssl4 
